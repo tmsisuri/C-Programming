@@ -2,8 +2,9 @@
 int main() {
 
     int i, j, k;
-    printf("Enter two values : \n");
+    printf("Enter first value : ");
     scanf("%d", &i);
+    printf("Enter second value : ");
     scanf("%d", &j);
 
     k = i + j;
