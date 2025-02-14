@@ -104,5 +104,68 @@ int main() {
     }
     printf("\n");
 
+    printf("Pattern 9 \n");
+    printf("\n");
+
+    for(int i=1; i<=4; i++) {
+        for(int j=1; j<=i; j++) {
+            printf("  ");
+        }
+        for(int k=7; k>=(i*2)-1; k--) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    printf("Pattern 10 - method 1 \n");
+    printf("\n");
+
+    for(int i=1; i<=4; i++) {
+        for(int k=5; k>=i; k--) {
+            printf("  ");
+        }
+        for(int j=1; j<=(i*2)-3; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for(int i=1; i<=4; i++) {
+        for(int j=1; j<=i; j++) {
+            printf("  ");
+        }
+        for(int k=7; k>=(i*2)-1; k--) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    printf("\n");
+
+    printf("Pattern 10 - method 2 \n");
+    printf("\n");
+
+    int n = 4;
+
+    for (int i = 1; i <= n; i++) {
+        for (int j = i; j < n; j++) {
+            printf("  ");
+        }
+        for (int j = 1; j <= (2 * i - 1); j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    // Lower part of the diamond
+    for (int i = n - 1; i >= 1; i--) {
+        for (int j = n; j > i; j--) {
+            printf("  ");
+        }
+        for (int j = 1; j <= (2 * i - 1); j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
     return 0;
 }
