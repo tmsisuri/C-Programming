@@ -167,5 +167,20 @@ int main() {
         printf("\n");
     }
 
+    printf("Pattern 11 \n");
+    printf("\n");
+
+    for(int i=1; i<=4; i++) {
+        for(int j=1; j<=4; j++) {
+            int k = i+j-1;
+            if(k>4) {
+                k = k-4;
+            }
+            printf("%d ",k);
+        }
+        printf("\n");
+    }
+    printf("\n");
+
     return 0;
 }
