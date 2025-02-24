@@ -31,7 +31,7 @@ int main() {
 }
 
 void celsius(float temp){
-     printf("Temperature in Celsius : %.2f\n", ((float)5/9)*temp-32);
+     printf("Temperature in Celsius : %.2f\n", ((float)5/9)*(temp-32));
  }
 void fahrenheit(float temp) {
     printf("Temperature in Fahrenheit : %.2f\n",  ((float)9/5)*temp+32);
